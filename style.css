@@ -448,8 +448,8 @@ transform: scale(0.9);
      cursor: pointer;
   }
   .contact-icons{
-    height: 45px;
-    width:45px;
+    height: 450px;
+    width:450px;
  
     color:white;
     font-size:55px;
@@ -460,8 +460,44 @@ transform: scale(0.9);
     border-radius: 8px;
     margin-right: 14px;
     transition: all .45s ease;
-    
+    position: relative;
+    margin-left: 28%;
+   margin-top:10px;   
  }
- .contact-icons i:hover{
-    color: brown;
-}
+ .contact-icons a{
+    padding: 18px;
+    font-size: 64px;
+ 
+ }
+ .contact-icons a{
+    display: inline;
+ }
+ .contact-icons .icontext{
+    position: absolute;
+    top: -65px;
+   
+    transform: translateX(-50%);
+    color: blue;
+    padding: 5px 2px;
+    font-size: 20px;
+    border-radius: 1rem;
+    border: solid 5px slateblue;
+    opacity: 0;
+
+    transition: opacity 0.34s ease;
+ }
+ .contact-icons a:hover{
+    color: blue;
+ }
+  .contact-icons #instra i:hover{
+    color: red;
+   }
+   .contact-icons #git i:hover{
+    color: white;
+   }
+   .contact-icons #what i:hover{
+    color: green;
+   }
+ .contact-icons a:hover .icontext{
+    opacity: 2;
+ }
