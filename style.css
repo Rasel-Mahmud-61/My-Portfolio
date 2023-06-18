@@ -77,18 +77,19 @@ span{
 
 }
 section{
-   padding: 90px 5% 120px;
+   padding: 30px 6% 110px;
   
 }
 .home{
     position: relative;
-    height:100vh ;
+   
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background: rgb(10, 15, 24);
+    width: 100%
 }
 .slide{
     margin-bottom: 15px;
@@ -127,7 +128,7 @@ transform: scale(0.9);
     margin-bottom: 20px;
 }
 .about-img img{
-    max-width:530px;
+    max-width:2530px;
     height: auto;
     width: 100%;
     border-radius: 5px;
@@ -138,23 +139,31 @@ transform: scale(0.9);
  
  .welcome 
  {
-    padding-bottom: 280px;
+    padding-bottom: 220px;
   
  }
+ .welcome .hello
+ {
+    font-size: 90px;
+    color: aqua;
+    margin-bottom: 20px;
+ }
  .welcome .hi{
-    font-size: 30px;
-    color: aliceblue;
+    font-size: 35px;
+    color: blueviolet;
     margin-bottom: 20px;
  }
  .welcome .name{
-    font-size: 40px;
-    color:aquamarine;
+    font-size: 20px;
+    color:white;
+    margin-bottom: 90px;
  }
 
 .wrapper
-{
+{   
+    margin-top: 120px;
     display: inline-flex;
-    margin-left: -300px;
+    margin-left: -400px;
 }
 .wrapper .static-txt
 {
@@ -216,12 +225,12 @@ transform: scale(0.9);
 .skills_section{
     width: 100%;
     height: 100vh;
-    padding: 0px 13%;
-   
+    padding: 0px 9%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: -70px;
 }
 .skills_head{
     width: 100%;
@@ -365,7 +374,115 @@ transform: scale(0.9);
     }
 }
 
+/*   serices  section  */
 
+
+.services{
+    background: rgb(10, 15, 25);
+ }
+ .achieve{
+    text-align: center;
+ }
+ .achieve h1{
+    font-size: 50px;
+    line-height:3;
+    color: blueviolet;
+    margin-bottom: 30px;
+ }
+ .achievement-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: center;
+    gap: 2.6rem;
+    margin-top: 5 rem;
+
+ }
+ .box5{
+     padding: 35px 45px;
+     border-radius: 3rem;
+     transition: all .45s ease;
+     background: linear-gradient(to right,blueviolet,aqua,white);
+     height: 600px;
+ }
+ .box6{
+    padding: 35px 45px;
+    border-radius: 3rem;
+    transition: all .45s ease;
+    background: linear-gradient(to right,rgb(116, 254, 148),aqua);
+    height: 600px;
+}
+.box7{
+    padding: 35px 45px;
+    border-radius: 3rem;
+    transition: all .45s ease;
+    background: linear-gradient(to right,rgb(7, 235, 159),rgb(201, 4, 212));
+    height: 600px;
+    color: aquamarine;
+}
+ 
+.box5 h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(250, 240, 255);
+    margin-bottom: 13px;
+
+ }
+ .box6 h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(250, 240, 255);
+    margin-bottom: 13px;
+
+ }
+ .box7 h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(250, 240, 255);
+    margin-bottom: 13px;
+
+ }
+ .box5 p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+ }
+ .box6 p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+ }
+ .box7  p{
+    color: aliceblue;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+ }
+ .box5:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+   background: slategrey;
+ }
+ .box6:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+   background: slategrey;
+ }
+ .box7:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+   background: slategrey;
+ }
+ .box5 a{
+     margin-top: 120px;
+ }
+ .box6 a{
+    margin-top: 100px;
+}
+.box7 a{
+    margin-top: 120px;
+}
 
 .achievement{
     background: rgb(10, 15, 25);
@@ -398,15 +515,16 @@ transform: scale(0.9);
     padding: 35px 45px;
     border-radius: 3rem;
     transition: all .45s ease;
-    background: linear-gradient(to right,blueviolet,blue);
+    background: linear-gradient(to right,green,rgb(0, 255, 234),rgb(202, 17, 230));
     height: 600px;
 }
 .box3{
     padding: 35px 45px;
     border-radius: 3rem;
     transition: all .45s ease;
-    background: linear-gradient(to right,green,yellow);
+    background: linear-gradient(to right,rgb(7, 235, 159),rgb(168, 168, 79));
     height: 600px;
+    color: aquamarine;
 }
  
 .box h3{
@@ -493,7 +611,7 @@ transform: scale(0.9);
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     align-items: center;
     gap:5rem;
     margin-top: 5rem;
@@ -535,7 +653,8 @@ transform: scale(0.9);
 
 }
 .layer p{
-    color:red;
+    color:white;
+    color: black;
     font-size: 20px;
     line-height: 1.8;
 }
@@ -578,6 +697,7 @@ transform: scale(0.9);
     grid-template-columns: repeat(2,1fr);
     
     gap:1.5rem;
+   
 }
 .contact-text h1{
     color: var(--text-color);
@@ -604,38 +724,47 @@ transform: scale(0.9);
     font-size: 20px;
     
  }
- .list li a:hover{
-    color: var(--text-color);
-   
- }
- 
+
  
  .contact-form form{
     position: relative;
+ 
  }
  .contact-form form,input,form textarea{
      width: 100%;
-     padding: 14px;
-     background: rgb(31, 37, 43);
+     padding: 10px;
+     
      border-radius: 23px;
-     color: var(--text-color);
-     border:45px;
-    border-color: aqua;
+      
+     
      font-size: 35px;
     
      margin-bottom: 20px;
  }
   .contact-form textarea{
      resize: none;
-     height: 240px;
-
+     height: 270px;
+     background-color:rgb(18, 240, 170);
+     border: 2px solid rgb(198, 9, 205);
+   
   }
+  .contact-form input
+{
+    background-color:rgb(18, 240, 170);
+    border: 2px solid rgb(198, 9, 205);
+}
+
+  ::placeholder{
+    color:white;
+  }
+ 
   .contact-form .submit{
     display: inline-block;
     font-size: 26px;
     background: var(--main-color);
     width: 180px;
     transition: all .45s ease;
+    margin-bottom: 0px;
   }
   .contact-form .submit:hover{
      transform: scale(1.2);
@@ -656,7 +785,7 @@ transform: scale(0.9);
     transition: all .45s ease;
     position: relative;
     margin-left: 28%;
-   margin-top:10px;   
+    margin-top:-70%
  }
  .contact-icons a{
     padding: 18px;
@@ -695,3 +824,13 @@ transform: scale(0.9);
  .contact-icons a:hover .icontext{
     opacity: 2;
  }
+.cv{
+
+      text-align: center;
+      justify-content: center;
+
+}
+.btn{
+     
+     background-color:springgreen;
+}
