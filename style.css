@@ -628,7 +628,7 @@ transform: scale(0.9);
     width: 100%;
    
     display:block;
-    transition: transform 0.5s;
+    transition: opacity 0.1 ease;
 
 }
 .layer {
@@ -651,11 +651,12 @@ transform: scale(0.9);
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 15px;
+    color: aliceblue;
 
 }
 .layer p{
     color:white;
-    color: black;
+   
     font-size: 20px;
     line-height: 1.8;
 }
@@ -674,6 +675,12 @@ transform: scale(0.9);
 .row:hover .layer{
     height: 100%;
 }
+.row:hover >img {
+    opacity: 0.3 ;
+}
+.row:hover .layer {
+    opacity: 1; /* Increased icon opacity on hover */
+  }
 .portfolio-content{
     
     background: rgb(10, 15, 24); 
@@ -745,14 +752,17 @@ transform: scale(0.9);
   .contact-form textarea{
      resize: none;
      height: 270px;
-     background-color:rgb(18, 240, 170);
+     background-color:rgb(30, 63, 53);
      border: 2px solid rgb(198, 9, 205);
+
+     color: aliceblue;
    
   }
   .contact-form input
 {
-    background-color:rgb(18, 240, 170);
+    background-color:rgb(30, 63, 53);
     border: 2px solid rgb(198, 9, 205);
+    color:aliceblue;
 }
 
   ::placeholder{
@@ -835,6 +845,13 @@ transform: scale(0.9);
      
      background-color:springgreen;
 }
-@media (max-width: 768px) {
-    /* Styles for screens with a width of 768px or less */
+@media(max-width:480px) {
+    .my_counter_section ul {
+        margin: 0
+    }
+
+    .my_counter_section ul li {
+        width: 100%;
+        padding-left: 0
+    }
 }
